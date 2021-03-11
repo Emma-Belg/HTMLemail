@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--xhtml is used for email client compatibility -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--    to help with compatibility with edge and IE-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--    mobile compatibility-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    not really needed for emails but is useful if you want to send people to web version of email -->
+    <title>Emma Wishart HTML Email</title>
+    <style type="text/css">
+        body {
+            /*for outlook compatibility it is useful to have a capital M for margin property*/
+            Margin: 0;
+            padding: 0;
+            background-color: #f6f9fc;
+        }
+
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f6f9fc;
+            padding-bottom: 40%;
+            max-height: 500px;
+        }
+
+        .webkit {
+            Margin: 0 auto;
+            max-width: 600px;
+            background-color: #ffffff;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        .outer {
+            width: 100%;
+            max-width: 600px;
+            font-family: sans-serif;
+            color: #4a4a4a;
+            /*this stops the automatic border spacing that some email clients add to tables*/
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffc30e;
+            font-size: 16px;
+        }
+
+        .three-columns {
+            text-align: center;
+            font-size: 0;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        .three-columns .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .padding {
+            /*for outlook it is better to use padding-top bottom etc instead of just "padding"*/
+            padding: 15px;
+        }
+
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            img.third-img-last {
+                width: 200px!important;
+                max-width: 200px!important;
+            }
+            .padding {
+                padding-right: 0!important;
+                padding-left: 0!important;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            img.content-img {
+                width: 250px!important;
+                max-width: 200px!important;
+            }
+            .padding {
+                padding-right: 0!important;
+                padding-left: 0!important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="webkit">
+        <table class="outer" align="center">
+            <tr>
+                <td>
+                    <!-- Start main content container table-->
+                    <table width="100%">
+                        <tr>
+                            <!--  It is recommended to not have any spaces in inline styling for html email-->
+                            <td style="background-color:#ffc30e;padding:10px;text-align:center;">
+                                <a href="https://www2.telenet.be/nl"><img src="resources/logos/telenet-white.png"
+                                                                          alt="logo" width="250px"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://www2.telenet.be/nl">
+                                    <!--Making this image responsive with the max-width makes the below columns wrap responsively-->
+                                    <img src="resources/woman-with-phone.jpeg" alt="woman with phone"
+                                         width="600px" style="max-width:100%;">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Start product Section-->
+                                <table width="100%" style="border-spacing:0;">
+                                    <tr>
+                                        <td class="three-columns">
+                                            <!-- First product: Play Sports-->
+                                            <table class="column">
+                                                <tr>
+                                                    <td class="padding">
+                                                        <table class="content">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="https://www.playsports.be/"
+                                                                       target="_blank">
+                                                                        <img src="resources/football-696x392.jpg"
+                                                                             alt="Play Sports" class="content-img"
+                                                                             style="max-width:150px;">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:10px;">
+                                                                    <p style="font-size:17px;font-weight:bold;">PLAY
+                                                                        SPORTS</p>
+                                                                    <p>Play Sports, dat betekent genieten van de
+                                                                        strafste sportmomenten.</p>
+                                                                    <a href="https://www.playsports.be/"
+                                                                       target="_blank">Learn more...</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- End First product: Play Sports-->
+                                            <!-- Second product: Telenet TV-->
+                                            <table class="column">
+                                                <tr>
+                                                    <td class="padding">
+                                                        <table class="content">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="https://www.telenettv.be/nl.html"
+                                                                       target="_blank">
+                                                                        <img src="resources/streaming.png"
+                                                                             alt="Telenet TV" class="content-img"
+                                                                             style="max-width:150px;">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:10px;">
+                                                                    <p style="font-size:17px;font-weight:bold;">
+                                                                        TELENET TV</p>
+                                                                    <p>De allerbeste entertainment en tv-ervaring in
+                                                                        één, dat kàn met Telenet TV!</p>
+                                                                    <a href="https://www.telenettv.be/nl.html"
+                                                                       target="_blank">Learn more...</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- End Second product: Telenet TV-->
+                                            <!-- Third product: Yugo TV-->
+                                            <table class="column">
+                                                <tr>
+                                                    <td class="padding">
+                                                        <table class="content">
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="https://www.yugotv.be/" target="_blank">
+                                                                        <img src="resources/yugotv-1.png" alt="Yugo TV"
+                                                                             class="third-img-last content-img" style="max-width:150px;">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding:10px;">
+                                                                    <p style="font-size:17px;font-weight: bold;">YUGO
+                                                                        TV</p>
+                                                                    <p>Kijk live en uitgesteld naar de programma’s van
+                                                                        de strafste tv-zenders.</p>
+                                                                    <a href="https://www.yugotv.be/" target="_blank">Learn
+                                                                        more...</a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <!-- End Third product: Yugo TV-->
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- End product Section-->
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- End main content container table-->
+                </td>
+            </tr>
+
+            <!--Start Footer section-->
+            <!--Start Social Media Contact section-->
+            <tr>
+                <td>
+                    <table width="100%" style="border-spacing:0;">
+                        <tr>
+                            <td style="background-color:#ffc30e;padding:15px;text-align:center;">
+                                <p style="font-size:18px;color:#ffffff;Margin-bottom:13px;">
+                                    Connect with us
+                                </p>
+                                <a href="#" target="_blank"><img src="resources/social/white-facebook.png"
+                                                                 alt="facebook" width="30px"></a>
+                                <a href="#" target="_blank"><img src="resources/social/white-instagram.png"
+                                                                 alt="instagram" width="30px"></a>
+                                <a href="#" target="_blank"><img src="resources/social/white-twitter.png" alt="twitter"
+                                                                 width="30px"></a>
+                                <a href="#" target="_blank"><img src="resources/social/white-youtube.png" alt="youtube"
+                                                                 width="30px"></a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--End Social Media Contact section-->
+
+            <!--Start final contact section-->
+            <tr>
+                <td style="background-color:#efefef;">
+                    <table width="100%" style="border-spacing:0;">
+                        <tr>
+                            <td style="padding-top:20px;padding-bottom:10px;text-align:center;">
+                                <a href=""><img src="resources/logos/799px-Telenet_Logo.svg.png" alt="Telenet logo"
+                                                style="max-width:200px;"></a>
+                                <p style="font-size:14px;Margin-top:18px">Telenet Group NV/SA <br>
+                                    Liersesteenweg 4<br>
+                                    2800 Mechelen
+                                </p>
+                                <p style="font-size:14px;">
+                                    <a href="mailto:example@telenet.be">example@telenet.be</a>
+                                </p>
+                                <p style="font-size:14px;">
+                                    Reception: <a href="tel:+3215333000">+32 15 333 000</a>
+                                </p>
+                                <p style="font-size:14px;">
+                                    Click here to <a href="#">unsubscribe.</a>
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td height="20px" style="background-color:#ffc30e;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--End final contact section-->
+            <!--End Footer section-->
+        </table> <!--End Outer Table-->
+    </div> <!--End Webkit-->
+</div> <!--End Wrapper-->
+</body>
+</html>
