@@ -3,9 +3,10 @@
 I am learning about HTML email templating and have made a small mock-up email to practice. This is a grid style (created by nesting tables) email template that is responsive to different screen sizes. 
 To view the in-browser version of the webiste, [click here](https://emma-belg.github.io/HTMLemail/).
 
-![A full verson of the email display](telenet-email-full.png)
+The full Email            |  When it begins to wrap
+:-------------------------:|:-------------------------:
+![A full verson of the email display](telenet-email-full.png)  |  ![When the email begins to wrap](telenet-email-wrap-1.png)
 
-![When the email begins to wrap](telenet-email-wrap-1.png)
 
 
 ### Some things I have learnt
